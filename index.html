@@ -1,5 +1,63 @@
 <html>
-    <body>
-        in dev rn
-    </body>
+	<head>
+		<title>CodinCraft</title>
+		<style>
+			.headergrid {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				gap: 10px;
+				background-color: royalblue;
+				border-radius: 50px;
+				padding: 5px;
+				width: min-content;
+			}
+			.flexcenter {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				gap: 10px;
+				margin: 5px;
+			}
+			button {
+				border-radius: 30px;
+				border: 0;
+				background-color: royalblue;
+				color: white;
+				font-family: sans-serif;
+				padding: 10px;
+				font-weight: bold;
+				transition: background-color 0.2s ease;
+			}
+			button:hover {
+				background-color: cornflowerblue;
+			}
+			body {
+				margin: 0;
+				background-color: lightslategrey;
+				color: white;
+				font-family: sans-serif;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="flexcenter">
+				<div class="headergrid">
+					<button onclick="setpage('https://codincraft.com')">Home</button>
+					<button onclick="setpage('https://play.codincraft.com')">Play</button>
+				</div>
+			</div>
+		</header>
+		<div class="flexcenter">
+			<h1>CodinCraft</h1>
+		</div>
+		<div class="flexcenter">Coming soon</div>
+		<script>
+			function setpage(page) {
+				location.href = page;
+			}
+		</script>
+	</body>
 </html>
